@@ -24,6 +24,19 @@ margin: 10px 0px;
     margin-bottom: 10px;
 }
 
+@media (max-width:1024px) {
+    .Question {
+        width: 480px;
+    }
+}
+
+
+@media (max-width:860px) {
+    .Question {
+        width: 600px;
+    }
+}
+
 @media (max-width:460px) {
     .Question {
         width: 340px;
