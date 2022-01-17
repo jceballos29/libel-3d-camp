@@ -177,6 +177,10 @@ display: grid;
         width: 80%;
     }
 
+    .terms, .copyright  {
+        font-size: 14px;
+    }
+
     .social-networks img {
     width: 20px;
     margin-right: 15px;}
