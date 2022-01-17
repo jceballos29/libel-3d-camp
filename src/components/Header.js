@@ -36,33 +36,35 @@ const Header = () => {
     return (
         <div className="Header">
             <div className="header-container container">
-                <div className="header-item">
-                    <BulletPoint color={"#77bf41"} />
-                    Feedback en vivo
-                </div>
-                <h1>
-                    máster personajes para
-                    <br />
-                    <span className="video-games">videojuegos</span>
-                    <br />
-                    <span>AAA</span>
-                </h1>
-                <div className="header-buttons">
-                    <button className="watch-trailer">
-                        VER TRAILER
-                        <span>
-                            <IoChevronForward />
-                        </span>
-                    </button>
-                    <button className="see-theme">VER TEMÁTICA</button>
-                </div>
-                <div className="master-benefits">
-                    {benefits.map((benefit, e) => (
-                        <div className="header-item">
-                            <BulletPoint color={"#6000de"} />
-                            {benefit}
-                        </div>
-                    ))}
+                <div className="header-banner-information">
+                    <div className="header-item">
+                        <BulletPoint color={"#77bf41"} />
+                        Feedback en vivo
+                    </div>
+                    <h1>
+                        máster personajes para
+                        <br />
+                        <span className="video-games">videojuegos</span>
+                        <br />
+                        <span>AAA</span>
+                    </h1>
+                    <div className="header-buttons">
+                        <button className="watch-trailer">
+                            VER TRAILER
+                            <span>
+                                <IoChevronForward />
+                            </span>
+                        </button>
+                        <button className="see-theme">VER TEMÁTICA</button>
+                    </div>
+                    <div className="master-benefits">
+                        {benefits.map((benefit, e) => (
+                            <div className="header-item">
+                                <BulletPoint color={"#6000de"} />
+                                {benefit}
+                            </div>
+                        ))}
+                    </div>
                 </div>
                 <div className="header-information">
                     <div className="header-information-content">
