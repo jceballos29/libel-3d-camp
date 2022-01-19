@@ -44,6 +44,26 @@
     justify-content: space-evenly;
 }
 
+.save-your-quote {
+    text-decoration: none;
+    width: 220px;
+    height: 48px;
+    border-radius: 24px;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.save-your-quote span {
+    color: var(--cyan);
+}
+
+.save-your-quote:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
 
 @media (max-width: 1024px) {
 
@@ -65,11 +85,15 @@
         width: 100%;
         align-items: center;
     }
+
+    .save-your-quote {
+        margin-right: 0px;
+    }
 }
 
 @media (max-width: 460px) {
     .Awards {
-        height: 1000px;
+        height: 1200px;
     }
     .Awards h1 { 
         height: 10%;

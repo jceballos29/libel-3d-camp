@@ -11,11 +11,13 @@ import Itinerary from "./components/Itinerary";
 import DynamicAwards from "./components/DynamicAwards";
 import Categories from "./components/Categories";
 import Awards from "./components/Awards";
+import TrainingsToDo from "./components/TrainingsToDo";
 
 function App() {
     return (
         <div className="App">
             <Navbar />
+            <TrainingsToDo />
             <Trailer />
             <Categories />
             <Awards />
