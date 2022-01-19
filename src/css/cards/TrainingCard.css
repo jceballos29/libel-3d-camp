@@ -1,0 +1,170 @@
+.TrainingCard {
+    width: 270px;
+    height: 550px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.training-card-header {
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+    position: relative;
+}
+
+.training-card-header img {
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.training-card-body {
+    padding: 20px 25px;
+    width: 100%;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.training-card-title {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "training-card-icon training-card-info";
+    width: 240px;
+    height: 80px;
+}
+
+.training-card-icon {
+    grid-area: training-card-icon;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.training-card-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "training-card-name"
+        "training-card-price";
+    grid-area: training-card-info;
+    padding-left: 10px;
+}
+
+.training-card-name {
+    grid-area: training-card-name;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.training-card-name h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.training-card-price {
+    grid-area: training-card-price;
+    font-size: 14px;
+    color: var(--primary-blue);
+}
+
+.training-card-price sup  {
+    text-decoration: line-through;
+    color: var(--base-3);
+    margin-left: 3px;
+    font-size: 8px;
+}
+
+.training-card-icon {
+    grid-area: training-card-icon;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: var(--primary-blue);
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.training-card-option {
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.training-card-option select {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+
+.training-card-items {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color: var(--base-3);
+    font-size: 16px;
+}
+
+.training-card-items li {
+    list-style: none;
+}
+
+.get-training {
+    width: 210px;
+    height: 48px;
+    border-radius: 24px;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    border: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.get-training:hover {
+    background-color: var(--line);
+    color: white;
+}
+
+@media (max-width:1024px) {
+    .TrainingCard {
+    width: 220px;
+    height: 550px;
+    }
+}
+
+@media (max-width:860px) {
+
+    .TrainingCard {
+    width: 270px;
+    height: 550px;
+    }
+}

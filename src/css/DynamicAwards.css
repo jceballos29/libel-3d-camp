@@ -1,0 +1,115 @@
+.DynamicAwards {
+    width: 100%;
+    height: 525px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.dynamic-container {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dynamic-header {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.dynamic-header h1 {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 1.09;
+    color: black;
+    text-align: left;
+    width: 50%;
+}
+
+.dynamic-header h1 > span {
+    color: var(--primary-blue);
+}
+
+.dynamic-header p {
+    text-align: left;
+    color: var(--base-3);
+    font-size: 20px;
+    line-height: 1.35;
+    font-weight: normal;
+    width: 40%;
+}
+
+.dynamic-body {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media (max-width:1024px) {
+    .dynamic-body img {
+        width: 120px;
+    }
+}
+
+
+@media (max-width: 460px) {
+    .DynamicAwards {
+        height: 620px;
+    }
+
+    .dynamic-header {
+        height: 50%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dynamic-header h1 {
+        width: 100%;
+        font-size: 39px;
+        text-align: center;
+    }
+
+    .dynamic-header p {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .dynamic-body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 40px;
+    }
+
+    .dynamic-body img {
+        width: 120px;
+        justify-self: center;
+        align-self: center;
+    }
+
+}
+
+@media (max-width: 320px) {
+     .dynamic-header h1 {
+        width: 100%;
+        font-size: 36px;
+        text-align: center;
+    }
+    .dynamic-header p {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .dynamic-body img {
+        width: 100px;
+    }
+}

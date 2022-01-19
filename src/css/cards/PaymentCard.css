@@ -1,0 +1,24 @@
+.PaymentCard {
+    width: 125px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 10px;
+}
+
+.payment-image {
+    height: 50%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.payment-text {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
