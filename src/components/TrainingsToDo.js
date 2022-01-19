@@ -23,7 +23,7 @@ const TrainingsToDo = () => {
                 </div>
                 <div className="to-do-tags">
                     {technologies.map((tech) => (
-                        <Tags key={tech.id} icon={tech.icon} name={tech.name} />
+                        <Tags key={tech.name} icon={tech.icon} name={tech.name} />
                     ))}
                 </div>
                 <div className="to-do-content">

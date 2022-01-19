@@ -1,0 +1,119 @@
+.TeacherChard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teacher {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "teacher-icon-container teacher-information";
+    /* width: 350px; */
+    height: 72px;
+}
+.teacher-icon-container {
+    grid-area: teacher-icon-container;
+}
+
+.teacher-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    transition: 0.2s all ease-in;
+}
+
+.teacher-icon:hover {
+    font-size: 36px;
+}
+
+.teacher-information {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px 0px;
+    grid-template-areas:
+        "teacher-course"
+        "teacher-name";
+    grid-area: teacher-information;
+    padding-left: 20px;
+}
+.teacher-course {
+    grid-area: teacher-course;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+        display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.teacher-name {
+    grid-area: teacher-name;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.t-avatar {
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+}
+
+.t-label {
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: var(--base-3);
+}
+
+.t-name {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #c2d7ff;
+}
+
+
+@media (max-width:860px) {
+    .teacher {
+        height: 100% ;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .teacher-information {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .teacher-course { 
+        align-items: center;
+        justify-content: center;
+    }
+
+    .teacher-name {
+        justify-content: center;
+    }
+}
